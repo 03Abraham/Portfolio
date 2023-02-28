@@ -1,19 +1,75 @@
-const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav__links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-// const toggleMenu = (menu__humburger, navId) => {
-//   document.querySelector(menu__humburger)?.addEventListener('click', () =>
-//     document.getElementById(navId)?.classList.toggle('Mobile__menu')
-//   );
-// };
+function toggleMenu () {  
+  const navbar = document.querySelector('.navbar');
+  const burger = document.querySelector('.burger');
+  
+  burger.addEventListener('click', (e) => {    
+    navbar.classList.toggle('show-nav');
+  });    
+  
+  const navbarLinks = document.querySelectorAll('.navbar a');
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {    
+      navbar.classList.toggle('show-nav');
+    }); 
+  })
+   
+}
+toggleMenu();
 
-// // toggleMenu('nav__links', 'nav-menu');
-// // document.querySelectorAll('.nav__link').forEach(link =>
-// //   link.addEventListener('click', () =>
-// //     document.getElementById('nav-menu')?.classList.remove('show')
-// //   )
-// // );
+
+// La recuperation des elements 
+const form = document.querySelector("#form");
+const firstName = document.querySelector('#firstname');
+const lastName = document.querySelector('#lastname');
+const profession = document.querySelector('#profession');
+const email= document.querySelector('#email');
+const Message = document.querySelector('#message')
+
+
+function sendMail() {
+  var params = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      profession: profession.value,
+      email: email.value,
+      message: Message.value,
+  };
+  const serviceID = "service_nkldcyh";
+  const templateID = "template_vy49hjw";
+
+    emailjs.send(serviceID, templateID, params)
+      .then(res => {
+        
+          alert('Votre message a bien été envoyer');
+      })
+      .catch(err => console.log(err));
+}
+// Evenements
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    sendMail();
+    // form_verify();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

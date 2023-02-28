@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
     <title>Porfolio</title>
 </head>
 <body>
      <!--===== HEADER =====-->
-        <header> 
-            <nav class="navbar">
-                <div class="nav__links" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Achievement</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-                <img src="Icons/icon-hamburger.svg" alt="menu humburger" class="menu__humburger">
-            </nav> 
-
+        <header>
+            <!-- /Menu-->
+               <div class="hearder__nav" id="header-nav">
+                   <nav class="navbar dark-mode" role="navigation">    
+                           <ul class="navbar__links">
+                             <li class="navbar__link first"><a href="#">Home</a></li>
+                             <li class="navbar__link second"><a href="#">About</a></li>
+                             <li class="navbar__link third"><a href="#">Experience</a></li>
+                             <li class="navbar__link four"><a href="#">Achievement</a></li>
+                             <li class="navbar__link fifth"><a href="#">Contact</a></li>
+                           </ul>   
+                           <button class="burger">
+                             <span class="bar"></span>  
+                           </button>   
+                     </nav>
+            	</div>
+            
              <!-- ===== home ===== -->
                 <div class="imgdata">
 
                     <div class="home__data">
                         <div class="welcome__box">
-                           <p>Welcome To My Porfolio</p>
+                           <span class="texte " id="t1">Welcome To My Porfolio &nbsp;</span>
+                           <span class="texte " id="t2">Welcome To My Porfolio &nbsp;</span>
+
                         </div>
-                        <p class="home__title">Hey Iam </p> 
-                        <h1 class="home__title">
+                        <p class="home__title">Hey I'm </p> 
+                        <h1 class="home__title2">
                            <span class="home__title-color">Abraham</span>
                            <span class="home__title-color1">Makutu</span>
                         </h1>
@@ -43,97 +50,224 @@
                         <img src="Images/Profil image.png" alt="">  
                     </div>
                 </div>
-                <div class="Btn">
-                    <div>
-                        <a href="#" class="button1">Download CV </a>
+                <di class="Btn">
+                    <div data-tooltip="Size: 2Mb" class="button1">
+                        <div class="button-wrapper">
+                          <div class="text"> <a href="#">Download CV</a></div>
+                            <span class="icon">
+                             <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" height="2em" width="2em" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none"></path>
+                             </svg>
+                            </span>
+                        </div>
                     </div>
-                    <div>
+                    
                       <a href="#" class="button">Let's Talk </a>
-                    </div>
+                    
                 </div>
         </header>
+        <!-- ======= Main ======= -->
     <main class="container">
         <!-- ====== About ===== -->
         <section class="about__section">
             <div class="section-title">
-                <h2>About</h2>
+                <h2 class="title"> <span class="fleche"></span> About</h2>
             </div>
 
                 <div class="about__container ">
                     
                     <div class="about__img">
-                        <div class="under__image"></div>
                         <img src="Images/laptop.jpeg" alt="">
                     </div>
                     
                     <div class="container__text">
+                        <div class="about__box">
+                          <div class="box__skill">
+                              <div class="Ex__Year">
+                                 <i class="uil uil-award"></i>
+                                 <h3>Experience</h3>
+                                 <p> Less than 1 years of experiencing</p>
+                              </div>
+                               
+                          </div>
+                          <div class="box__skill">
+                              <div class="Ex__Year">
+                                 <i class="uil uil-copy-alt"></i>
+                                 <h3>Projects</h3>
+                                 <p> 4+ completed </p>
+                              </div>
+                              
+                          </div>
+                        </div>
                         <h2 class="about__subtitle">I'am Abraham</h2>
                         <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
                     </div> 
 
-                    <div>
-                      <a href="#" class="button"> HIRE ME</a>
+                    <div class="hire__me">
+                      <a href="#" class="btn"> HIRE ME</a>
                     </div>
 
                 </div>
         </section>
         <!-- ====== My Experience ===== -->
-        <section>
+        <section class="experience__section">
             <div class="section-title">
-                <h2>My Experience</h2>
+                <h2 class="title"><span class="fleche"></span>My Experience</h2>
             </div>
             <div class="experience__container">
-                <div></div>
-                <div></div>
+                <div class="Ex__box1"> 
+                       <div class="">
+                          <div class="frontend__text">
+                              <h4>Frontend development</h4>
+                          </div>
+                          <div class="frontend">
+                          <div >
+                              <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" class="valid__icon " alt=""></box-icon>
+                                <p>HTML</p>
+                              </div>
+                              <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                                <p>JAVASCRIPT</p>
+                              </div>
+                              <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                                <p>TAILWIND</p>
+                              </div>
+                          </div>
+   
+                          <div>
+                               <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                                <p>CSS</p>
+                              </div>
+                              <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                                <p>FIGMA</p>
+                              </div>
+                              <div class="Skills">
+                                <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                                <p>REACT</p>
+                             </div>
+                          </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="Ex__box1">
+                     <div class="frontend__text">
+                       <div>
+                           <h4>Backend development and design</h4>
+                       </div>
+                       <div class="frontend">
+                       <div class="kill__box">
+                           <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p>NODE JS</p>
+                           </div>
+                           <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p>MYSQL</p>
+                           </div>
+                           <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p></p>
+                           </div>
+                       </div>
+
+                       <div>
+                            <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p>HTML</p>
+                           </div>
+                           <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p>HTML</p>
+                           </div>
+                           <div class="Skills">
+                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
+                             <p>HTML</p>
+                          </div>
+                       </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ===== Achievement ===== -->
         <section>
             <div class="section-title">
-                <h2>Achievements</h2>
+                <h2 class="title"><span class="fleche"></span>Achievements</h2>
             </div>
             <div class="achievement__container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+
+              <div class="Projects">
+                  <div class="work">
+                      <div class="project__img" ></div>
+                      <h3 class="title__project"> Landing Page</h3>
+                     <div class="btn__git">
+                        <a href="#" class="button001">Github</a> 
+                        <a href="#" class="button001"> Website</a>
+                      </div>
+                  </div>
+                   <div class="work">
+                       <div class="project__img2" ></div>
+                       <h3 class="title__project"> Dashboard UI</h3>
+                      <div class="btn__git">
+                         <a href="#" class="button001">Github</a> 
+                         <a href="#" class="button001"> Website</a>
+                       </div>
+                   </div>
+
+               </div>
             </div>
         </section>
         <!-- ====== Contact Me ===== -->
         <section>
             <div class="section-title">
-                <h2>Contact Me</h2>
+                <h2 class="title"> <span class="fleche"></span>Contact Me</h2>
             </div>
             <div class="contact__container">
-                <form action="">
-                    <div>
-                       <div class="">
+                <form action="" method="post" id="form">
+                    <div class="Inputs">
+                       <div class="form-control">
                           <label class=""></label>
-                          <input type="text" class="" id="Prénom" name="firstName" required  placeholder="First Name" >
-                          <p id="prenomErr"></p>
+                          <input type="text" class="name" id="firstname" name="firstName" required  placeholder="First Name" >
+                          <i class="ri-checkbox-circle-fill"></i>
+                          <i class="uis uis-sync-exclamation"></i>
+                          <small>Message d'erreur</small>
                        </div>
 
-                       <div class="">
+                       <div class="form-control">
                           <label class=""></label>
-                          <input type="text" class="" id="Prénom" name="lastName" required  placeholder="Last Name"  >
-                          <p id="prenomErr"></p>
+                          <input type="text" class="name" id="lastname" name="lastName" required  placeholder="Last Name"  >
+                          <i class="ri-checkbox-circle-fill"></i>
+                          <i class="uis uis-sync-exclamation"></i>
+                          <small>Message d'erreur</small>
                        </div>
 
-                       <div class="">
+                       <div class="form-control">
                           <label class=""></label>
-                          <input type="text" class="" id="Prénom" name="profession" required  placeholder="Profession"  >
-                          <p id="prenomErr"></p>
+                          <input type="text" class="name" id="profession" name="profession" required  placeholder="Profession"  >
+                          <i class="ri-checkbox-circle-fill"></i>
+                          <i class="uis uis-sync-exclamation"></i>
+                          <small>Message d'erreur</small>
                        </div>
 
-                       <div class="">
+                       <div class="form-control">
                           <label class="" for="email"></label>
-                          <input type="email" class="" id="email" name="email" placeholder=" Your Email (@gmail.com)" required >
-                          <p id="errorEmail"></p>
+                          <input type="email" class="name" id="email" name="email" placeholder=" Your Email (@gmail.com)" required >
+                          <i class="ri-checkbox-circle-fill"></i>
+                          <i class="uis uis-sync-exclamation"></i>
+                          <small>Message d'erreur</small>
+                       </div>
+
+                       <div class="form-control">
+                          <label class="" for="message"></label>
+                          <textarea class="Message" name="message" id="message" cols="30" rows="6" required placeholder="Message..."></textarea>
                        </div>
 
                        <div class="">
 
-                         <button class="bout1" role="button">SEND MESSAGE </button> 
+                         <button type="submit"class="btn___send" role="button">SEND MESSAGE </button> 
 
                       </div>
                     </div>
@@ -142,6 +276,34 @@
         </section>
 
     </main>
+
+    <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+             <div class="footer__title">
+                <p >Thank You..!</p>
+            </div>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/abraham-mak-developer-marketing-digital-aviation-job-/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/03Abraham" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="footer__copy">
+                <p >&#169; Abraham Mak. All rigths reserved</p>
+            </div>
+            
+        </footer>
+
+    <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+       emailjs.init("T1_0MY4UbYMGIJh_K");
+      })();
+    </script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script src="script.js"></script>
 </body>
 </html>
