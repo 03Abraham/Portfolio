@@ -1,7 +1,7 @@
 @import '_variable.scss';
 
 
-*::before,::after{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,23 +17,24 @@ body{
     
 }
 
-header{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.205), #00242C),url(Images/Blockchain\ img.jpg);
-    // background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+// header{
+//     position: relative;
+//     display: block;
+//     // width: 100%;
+//     height: 100vh;
+//     background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.205), #00242C),url(Images/Blockchain\ img.jpg);
+//     // background-attachment: fixed;
+//     background-size: cover;
+//     background-position: center;
+//     padding: 0.2rem;
 
-    .hearder__nav{
-      position: relative;
-      width: 100%;
-      background: none;
-    }
+    // .hearder__nav{
+    //   position: relative;
+    //   width: 100%;
+    //   background: none;
+    // }
 
-}
+//}
 
 a{
   text-decoration:none;
@@ -45,163 +46,142 @@ a{
 }
 
 
-ul {
-  list-style:none;
+// ul {
+//   list-style:none;
+// }
+
+// header {==============================================================================
+//     position: absolute;
+//     width: 100%;
+//     height: 8vh;
+//     top: 0;
+//     left: 0;
+//     background: #000;
+//     color: #fff;
+//     padding: 0 2rem;
+// }
+//======================================================================================
+
+header {
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0 2rem;
 }
 
-
-/* Navbar */
-.navbar {  
-  display:flex;
-  align-items:center; 
-  justify-content:center;   
-  padding:10px;
-  font-size:1.1rem;
-  // background: $color-second ;
-  background-color: rgba(248, 243, 243, 0.12);   
-  backdrop-filter: blur(2px); 
-  color:  $color-principale;
-}
-.navbar__links { 
-  display:flex; 
-  justify-content: center; 
-  align-items: center;
-}
-.navbar__link { 
-  padding:0 10px;
-}
-.navbar__link > a { 
-  color: $color-white;
-  text-decoration:none;
-  font-size: $h2-font-size;
-}
-.burger {
-  display:none;
+nav {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*  Small device */
-@media screen and (max-width:767.98px) {
-  .navbar__links { 
-   
-    display:flex;
-    flex-direction:column;
-    // width: 0;
-    height:calc(60vh - 65px);  
-    position: absolute;
-    top:45px;
-    // left:0; 
-  //  right: 0;    
-   background-color: rgba(255, 255, 255, 0);   
-   backdrop-filter: blur(8px);   
-    transform: translateX(110%);
-    transition: all .5s ease-in-out;
-  }
-  .show-nav .navbar__links { 
-    
-    width:100vw;    
-    transform: translateX(0);
-  } 
-  .navbar__link {    
-    transform: translateX(101%);
-    transition: all .5s ease-in-out;
-  }
-  
-  .show-nav .navbar__link  {        
-    transform: translateX(0);    
-  }   
-  .navbar__link > a {
-    display:block;
-    padding:1rem;
-    font-size:1.6rem;
-    color: $color-texte;  
-    transition: all .4s ease-in-out;
-  }
-  .navbar__link > a:hover {
-    padding-left:2rem;
-    letter-spacing:5px;
-  }
-  
-  /* Toggle menu */
-  .burger {
-    display:inline-block;
-    // margin-right: -600px;
-    position:relative;
-    padding:0;
-    width:45px;
-    height:43px;
-    border:none;
-    background:transparent;
-    cursor:pointer;
-  }
-  .bar {
-    display:block;    
-    width:45px;
-    height:4px;  
-    border-radius:3px;
-    background: $color-white; 
-    transition: all .5s ease-in-out;   
-  }
-  .bar::before, .bar::after {
-    content:"";
-    width:45px;
-    height:4px;
-    position:absolute; 
-    left:0;  
-    background: $color-white; 
-    border-radius:3px;    
-    transition: all .5s ease-in-out;
-  }
-  .bar::before {
-    transform:translateY(-12px)
-  }
-  .bar::after {
-    transform:translateY(12px)
-  }
-  .show-nav .bar {
-    width:0;
-    background:transparent;    
-  }
-  .show-nav .bar::before {
-    transform:rotate(45deg);
-  }
-  .show-nav .bar::after {
-    transform:rotate(-45deg);
-  }
-  
-  /* Bonus - Animations */
-  .show-nav .first {      
-    transition: all 1s ease-out;
-  } 
-  .show-nav .second {      
-    transition: all 1.1s ease-out;
-  } 
-  .show-nav .third {      
-    transition: all 1.2s ease-out;
-  } 
-  .show-nav .four {      
-    transition: all 1.3s ease-out;
-  } 
-  .show-nav .fifth {      
-    transition: all 1.4s ease-out;
-  }
+.logo {
+    font-size: 2rem;
 }
 
-@media screen and (min-width:768px) {
-  .navbar__link > a::after {
-    display:block;
-    content:"";
-    width:0;
-    height:1px;
-    background:var(--navbar-color);
-    transition:width .4s;
-  }
-  .navbar__link:hover > a::after {
-    width:100%;
-  }
+.toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 
 
+/* .btn.btn-secondary {
+    background: transparent;
+    border: 2px solid pink;
+    color: #fff;
+} */
+
+/* Section Hero */
+.hero {
+    height: 100vh;
+    background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.205), #00242C),url('Images/Blockchain\ img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 991px) {
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #faf8f859;
+         backdrop-filter: blur(4px);
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+}
+
+
+
+//=======================================================================================
 .Btn{
   display: flex;
   justify-content: center;
@@ -284,7 +264,7 @@ ul {
 
 .button-wrapper,.text,.icon {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   left: 0;
@@ -424,6 +404,7 @@ ul {
     display: flex;
     justify-content: center;
     padding-top: .9em;
+    padding-bottom: 50px;
 
     
 }
@@ -481,9 +462,27 @@ ul {
          
     }
     .container__text, .btn{
-      padding-left: clamp(13vw, 45px,  30vw);
-       width: clamp(40vw, 300px , 60vw) ;
+      // padding-left: clamp(13vw, 45px,  30vw);
+       width: clamp(78vw, 300px , 60vw) ;
+       padding-bottom: 40px;
       
+    }
+
+ .hire__me{
+    border: 0;
+    background: linear-gradient(to right, #FA00FF, #00f);
+    color: $color-white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    width: 120px;
+
+    }
+    
+
+    .about__text{
+      color: $color-white;
+      font-size: 20px;
     }
 
     .about__box{
@@ -521,8 +520,10 @@ ul {
 
   .experience__section{
     width: auto;
-     margin-bottom: 100px;
+    margin-bottom: 80px;
+    margin-top: 80px;
   }
+
 
   .experience__container{
     display: flex;
@@ -530,10 +531,7 @@ ul {
     justify-content: center;
     align-items: center;
   
-    
-
-
-      .Ex__box1{
+  .Ex__box1{
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -541,6 +539,7 @@ ul {
       height: 294px;
       background-color: #989696;
       border-radius: 25%;
+      // margin-top: 50px ;
       margin-bottom: 40px;
      
     }
@@ -576,19 +575,31 @@ ul {
 
 .achievement__container{
   margin-top: 80px;
+  margin-bottom: 80px;
   
 }
 .Projects{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
 }
+@media all and (max-width: 991px){
+  .Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 
 .work{
   background-color: white;
   border-radius: 10%;
-  width: 242px;
-  height: 381px;
+  width: clamp(40vw,80%, 60vw);
+  height: 500px;
   overflow: hidden;
 
 }
@@ -598,9 +609,9 @@ ul {
     background-size: cover;
     background-position: center;
     border-radius: 10%;
-    margin-top: 18px;
-    margin-left: 22px;
-    // margin-right: 10px;
+    margin-top: 34px;
+    margin-left: clamp(3vw, 50px, 6vw);
+    margin-right: 50px;
     width: 80%;
     height: 250px;
   }
@@ -610,19 +621,21 @@ ul {
     background-size: cover;
     background-position: center;
     border-radius: 10%;
-    margin-top: 18px;
-    margin-left: 22px;
+    margin-top: 34px;
+    margin-left: clamp(3vw, 50px, 6vw);
     // margin-right: 10px;
     width: 80%;
     height: 250px;
   }
 
   .btn__git{
+    display: flex;
     padding-left: 20px;
-    gap: 10px;
+    gap: 20px;
   }
   .title__project{
-    margin-left: 15px;
+    margin: 45px 45px  ;
+    
   }
 
   .button001{
@@ -635,8 +648,8 @@ ul {
   color: #fff;
   border-radius: 0.45em;
   text-align: center;
-  width: 100em;
-  height: 65px;
+  width: 4em;
+  height: 50px;
   }
 .contact__container{
    display: flex;
