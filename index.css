@@ -36,7 +36,7 @@ nav {
   width: 100%;
   /* height: 100%; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -52,8 +52,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   list-style: none;
   width: 550px;
+  margin-top: 30px;
 }
 
 .menu li a {
@@ -61,11 +63,6 @@ nav {
   text-decoration: none;
 }
 
-/* .btn.btn-secondary {
-    background: transparent;
-    border: 2px solid pink;
-    color: #fff;
-} */
 /* Section Hero */
 .hero {
   height: 100vh;
@@ -82,6 +79,14 @@ nav {
     cursor: pointer;
     position: relative;
     z-index: 20;
+  }
+  .fermer {
+    -webkit-font-smoothing: antialiased;
+    display: none;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
   }
   .logo {
     position: relative;
@@ -106,8 +111,6 @@ nav {
     width: 100%;
     height: 100vh;
     background: rgba(250, 248, 248, 0.3490196078);
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
     flex-direction: column;
     padding: 2rem;
     justify-content: space-around;
@@ -130,7 +133,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .Btn .button {
   font-size: 20px;
@@ -251,7 +254,7 @@ nav {
 
 .imgdata {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 80px;
@@ -261,7 +264,7 @@ nav {
   justify-content: center;
 }
 .imgdata .home__img img {
-  width: clamp(200px, 50%, 649px);
+  width: clamp(200px, 50%, 800px);
   height: auto;
   max-width: 80%;
 }
@@ -309,6 +312,16 @@ nav {
   font-size: 20px;
 }
 
+@media all and (max-width: 991px) {
+  .imgdata {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    gap: 20px;
+  }
+}
 .container {
   background: #00242C;
 }
@@ -382,6 +395,11 @@ nav {
   color: #fff;
   font-size: 20px;
 }
+.about__container .about__subtitle {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 40px;
+}
 .about__container .about__box {
   display: flex;
   gap: 20px;
@@ -390,7 +408,7 @@ nav {
   width: clamp(40vw, 300px, 60vw);
   height: 184px;
   background-color: #9b9a98;
-  border-radius: 10%;
+  border-radius: 30px;
   overflow: hidden;
 }
 .about__container .box__skill .Ex__Year {
@@ -426,8 +444,14 @@ nav {
   width: clamp(30vw, 400px, 60vw);
   height: 294px;
   background-color: #989696;
-  border-radius: 25%;
+  border-radius: 50px;
   margin-bottom: 40px;
+}
+
+.ice {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .frontend {
@@ -462,8 +486,10 @@ nav {
 
 .Projects {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 @media all and (max-width: 991px) {
@@ -477,9 +503,9 @@ nav {
 }
 .work {
   background-color: white;
-  border-radius: 10%;
-  width: clamp(40vw, 80%, 60vw);
-  height: 500px;
+  border-radius: 30px;
+  width: clamp(30vw, 50%, 40vw);
+  height: 600px;
   overflow: hidden;
 }
 
@@ -487,25 +513,48 @@ nav {
   background-image: url(Images/project01.png);
   background-size: cover;
   background-position: center;
-  border-radius: 10%;
+  border-radius: 30px;
   margin-top: 34px;
-  margin-left: clamp(3vw, 50px, 6vw);
+  margin-left: clamp(1vw, 50px, 8vw);
   margin-right: 50px;
   width: 80%;
-  height: 250px;
+  height: 380px;
 }
 
 .project__img2 {
   background-image: url(Images/Projet02.png);
   background-size: cover;
   background-position: center;
-  border-radius: 10%;
+  border-radius: 30px;
   margin-top: 34px;
-  margin-left: clamp(3vw, 50px, 6vw);
+  margin-left: clamp(1vw, 50px, 8vw);
   width: 80%;
-  height: 250px;
+  height: 380px;
 }
 
+@media all and (max-width: 991px) {
+  .project__img {
+    background-image: url(Images/project01.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: 34px;
+    margin-left: clamp(3vw, 80px, 8vw);
+    margin-right: 50px;
+    width: 80%;
+    height: 380px;
+  }
+  .project__img2 {
+    background-image: url(Images/Projet02.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: 34px;
+    margin-left: clamp(3vw, 80px, 8vw);
+    width: 80%;
+    height: 380px;
+  }
+}
 .btn__git {
   display: flex;
   padding-left: 20px;
@@ -525,7 +574,7 @@ nav {
   color: #fff;
   border-radius: 0.45em;
   text-align: center;
-  width: 4em;
+  width: 6em;
   height: 50px;
 }
 
@@ -582,6 +631,13 @@ nav {
   height: 45px;
 }
 
+@media all and (max-width: 991px) {
+  .bloc__Inputs {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
 .footer {
   background-color: #151615;
   Height: 40vh;
@@ -593,6 +649,8 @@ nav {
   align-items: center;
   color: #FFFFFF;
   font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 6rem;
 }
 .footer .footer__copy p {
   display: flex;

@@ -12,6 +12,7 @@
     <title>Porfolio</title>
 </head>
 <body>
+
      <!--===== HEADER =====-->
      <header class="hero">
         <nav>
@@ -22,10 +23,10 @@
             </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Achievement </a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Achievement">Achievement </a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
         
@@ -75,7 +76,7 @@
       <!-- ======= Main ======= -->
     <main class="container">
         <!-- ====== About ===== -->
-        <section class="about__section">
+        <section class="about__section" id="About">
             <div class="section-title">
                 <h2 class="title"> <span class="fleche"></span> About</h2>
             </div>
@@ -105,28 +106,36 @@
                               
                           </div>
                         </div>
-                        <h2 class="about__subtitle">I'am Abraham</h2>
-                        <p class="about__text">En tant que développeur Fullstack passionné des nouvelles technologies, de l'aéronautique et de la finance, je suis convaincu que je suis un atout. Mes compétences techniques et mon intérêt pour les technologies émergentes me permettent de rester à jour avec les dernières tendances et innovations, ce qui me permet de contribuer de manière significative à tout projet. <br>
-                         J'ai acquis une expertise solide en matière de développement web et web mobile, de conception de bases de données et de programmation, ainsi que dans l'utilisation de technologies telles que JavaScript, React, Node.js,SQL et bien plus. En outre, mon expérience en aéronautique et en finance me permet de comprendre les exigences spécifiques de ces industries et de concevoir des solutions techniques qui répondent aux besoins. <br>
-                         Je suis motivé et engager pour travailler avec des équipes et collaborer avec des professionnels talentueux pour résoudre les défis les plus complexes de l'industrie. Je suis un communicateur efficace et un joueur d'équipe expérimenté, capable de travailler sous pression et de respecter les délais. 
-                         J'apportes de la valeur ajoutée à votre entreprise et contribuer à son succès sur le marché international. <br>
-                         Si vous êtes à la recherche d'un développeur Fullstack passionné, super dynamique, compétent et expérimenté, je serais ravi d'avoir l'occasion de discuter de mes compétences et de mon expérience en détail. N'hésitez pas à me contacter pour en savoir plus sur ce que je peux apporter à votre entreprise.</p>           
+                        <div>
+                           <h2 class="about__subtitle">I'am Abraham</h2>
+                           <p class="about__text">As a passionate Fullstack developer with a keen interest in new technologies, aerospace, and finance, I am confident that I would be an asset to any team. My technical skills and fascination with emerging technologies enable me to stay up-to-date with the latest trends and innovations, allowing me to make significant contributions to any project.<br>
+   
+                           I have acquired a solid expertise in web and mobile development, database design and programming, as well as in the use of technologies such as JavaScript, React, Node.js, SQL, and much more. Additionally, my experience in aerospace and finance allows me to understand the specific requirements of these industries and to design technical solutions that meet their needs.<br>
+                           
+                           I am motivated and committed to working with teams and collaborating with talented professionals to tackle the most complex challenges in the industry. I am an effective communicator and an experienced team player, capable of working under pressure and meeting deadlines.<br>
+                           
+                           I bring added value to your company and contribute to its success in the international market. If you are looking for a passionate, super dynamic, skilled, and experienced Fullstack developer, I would be delighted to have the opportunity to discuss my skills and experience in detail. Please do not hesitate to contact me to learn more about what I can bring to your company.</p> 
+   
+                            
+                        </div>  
+                        <br>
+                        <div class="hire__me">
+                         <a href="" class="btn"> HIRE ME</a>
+                        </div>       
                     </div> 
 
-                    <div class="hire__me">
-                      <a href="" class="btn"> HIRE ME</a>
-                    </div>
+                    
 
                 </div>
         </section>
         <!-- ====== My Experience ===== -->
-        <section class="experience__section">
+        <section class="experience__section" id="Experience">
             <div class="section-title">
                 <h2 class="title"><span class="fleche"></span>My Experience</h2>
             </div>
             <div class="experience__container">
                 <div class="Ex__box1"> 
-                       <div class="">
+                       <div class="ice">
                           <div class="frontend__text">
                               <h4>Frontend development</h4>
                           </div>
@@ -164,8 +173,8 @@
                    </div>
                 </div>
                 <div class="Ex__box1">
-                     <div class="frontend__text">
-                       <div>
+                     <div class="ice">
+                       <div class="frontend__text">
                            <h4>Backend development and design</h4>
                        </div>
                        <div class="frontend">
@@ -178,10 +187,7 @@
                              <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
                              <p>MYSQL</p>
                            </div>
-                           <!-- <div class="Skills">
-                             <box-icon ><img src="Icons/check-circle-solid-24.png" alt=""></box-icon>
-                             <p></p>
-                           </div> -->
+                          
                        </div>
 
                     </div>
@@ -190,7 +196,7 @@
         </section>
         <!-- ===== Achievement ===== -->
         <section>
-            <div class="section-title">
+            <div class="section-title" id="Achievement">
                 <h2 class="title"><span class="fleche"></span>Achievements</h2>
             </div>
             <div class="achievement__container">
@@ -218,44 +224,49 @@
         </section>
         <!-- ====== Contact Me ===== -->
         <section>
-            <div class="section-title">
+            <div class="section-title" id="Contact">
                 <h2 class="title"> <span class="fleche"></span>Contact Me</h2>
             </div>
             <div class="contact__container">
+                
                 <form action="" method="post" id="form">
                     <div class="Inputs">
-                       <div class="form-control">
-                          <label class=""></label>
-                          <input type="text" class="name" id="firstname" name="firstName" required  placeholder="First Name" >
-                          <i class="ri-checkbox-circle-fill"></i>
-                          <i class="uis uis-sync-exclamation"></i>
-                          <small>Message d'erreur</small>
-                       </div>
-
-                       <div class="form-control">
-                          <label class=""></label>
-                          <input type="text" class="name" id="lastname" name="lastName" required  placeholder="Last Name"  >
-                          <i class="ri-checkbox-circle-fill"></i>
-                          <i class="uis uis-sync-exclamation"></i>
-                          <small>Message d'erreur</small>
-                       </div>
-
-                       <div class="form-control">
-                          <label class=""></label>
-                          <input type="text" class="name" id="profession" name="profession" required  placeholder="Profession"  >
-                          <i class="ri-checkbox-circle-fill"></i>
-                          <i class="uis uis-sync-exclamation"></i>
-                          <small>Message d'erreur</small>
-                       </div>
-
-                       <div class="form-control">
-                          <label class="" for="email"></label>
-                          <input type="email" class="name" id="email" name="email" placeholder=" Your Email (@gmail.com)" required >
-                          <i class="ri-checkbox-circle-fill"></i>
-                          <i class="uis uis-sync-exclamation"></i>
-                          <small>Message d'erreur</small>
-                       </div>
-
+                         <div class="blocInputs">
+                              <div class="bloc1">
+                                 <div class="form-control">
+                                    <label class=""></label>
+                                    <input type="text" class="name" id="firstname" name="firstName" required  placeholder="First Name" >
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                    <i class="uis uis-sync-exclamation"></i>
+                                    <small>Message d'erreur</small>
+                                 </div>
+          
+                                 <div class="form-control">
+                                    <label class=""></label>
+                                    <input type="text" class="name" id="lastname" name="lastName" required  placeholder="Last Name"  >
+                                    <i class="ri-checkbox-circle-fill"></i>
+                                    <i class="uis uis-sync-exclamation"></i>
+                                    <small>Message d'erreur</small>
+                                 </div>
+                              </div>
+                              <div class="bloc2">
+                                  <div class="form-control">
+                                     <label class=""></label>
+                                     <input type="text" class="name" id="profession" name="profession" required  placeholder="Profession"  >
+                                     <i class="ri-checkbox-circle-fill"></i>
+                                     <i class="uis uis-sync-exclamation"></i>
+                                     <small>Message d'erreur</small>
+                                  </div>
+           
+                                  <div class="form-control">
+                                     <label class="" for="email"></label>
+                                     <input type="email" class="name" id="email" name="email" placeholder=" Your Email (@gmail.com)" required >
+                                     <i class="ri-checkbox-circle-fill"></i>
+                                     <i class="uis uis-sync-exclamation"></i>
+                                     <small>Message d'erreur</small>
+                                  </div>
+                               </div>
+                          </div>   
                        <div class="form-control">
                           <label class="" for="message"></label>
                           <textarea class="Message" name="message" id="message" cols="30" rows="6" required placeholder="Message..."></textarea>
