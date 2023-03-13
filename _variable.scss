@@ -1,0 +1,288 @@
+// Couleurs
+$color-principale: #00242C;
+$color-secondaire: #6c757d;
+$color-tertiaire: #FFAC33;
+$color-texte: #FFFFFF;
+$color-first:#1ec36dd9;
+$color-second:#f0f0f0;
+$color-white:#fff;
+$color-success:#2ecc71;
+$color-error:#e74c3c;
+
+// Couleurs
+$color-sky-blue: #007bff;
+$color-Pink: #f8039a;
+$color-black: #000000;
+$color-quaternaire: #fc0123;
+$color-blue: #3407ff;
+
+// Variables dérivées
+$color-principale-contrastee: #fff;
+$color-secondaire-contrastee: #fff;
+$color-tertiaire-contrastee: #fff;
+$color-quaternaire-contrastee: #fff;
+$color-quintuplaire-contrastee: #000;
+
+
+// Couleurs de fond
+$color-fond-principale: #f8f9fa;
+$color-fond-secondaire: #fff;
+$color-fond-tertiaire: #dee2e6;
+
+// Tailles de police
+$taille-police-principale: 1.5rem;
+$taille-police-secondaire: 1.2rem;
+$taille-police-tertiaire: 1rem;
+$taille-police-texte: 0.8rem;
+
+// Marges
+$marge-haut: 4rem;
+$marge-bas: 4rem;
+$marge-gauche: 0.5rem;
+$marge-droite: 0.5rem;
+$mb-2: 8rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+// Rembourrages
+$rembourrage-haut: 0.5rem;
+$rembourrage-bas: 0.5rem;
+$rembourrage-gauche: 1rem;
+$rembourrage-droite: 1rem;
+
+
+// Largeurs et hauteurs
+$largeur-principale: 960px;
+$hauteur-principale: 600px;
+
+// Opacités
+$opacite-principale: 0.8;
+$opacite-secondaire: 0.5;
+
+// Rayons de bordure
+$rayon-bordure-principale: 5px;
+$rayon-bordure-secondaire: 3px;
+
+// Transitions
+$duree-transition-principale: 0.3s;
+$effet-transition-principale: ease-in-out;
+
+// Variables dérivées
+$largeur-bloc: $largeur-principale / 2;
+$hauteur-bloc: $hauteur-principale / 2;
+$marge-total: $marge-haut + $marge-bas + $marge-gauche + $marge-droite;
+$rembourrage-total: $rembourrage-haut + $rembourrage-bas + $rembourrage-gauche + $rembourrage-droite;
+
+// Grille
+$nombre-colonnes: 12;
+$largeur-colonne: 60px;
+$gutter: 20px;
+$largeur-grille: $nombre-colonnes * ($largeur-colonne + $gutter);
+
+// Polices
+$police-principale: 'Open Sans', sans-serif;
+$police-secondaire: 'Roboto', sans-serif;
+$police-tertiaire: 'Lato', sans-serif;
+$font-body: 'Poppins', sans-serif;
+
+// Styles de police
+$style-police-gras: bold;
+$style-police-normal: normal;
+$style-police-italique: italic;
+
+
+
+// Espacement des lettres
+$espacement-lettre-principale: 0.05em;
+$espacement-lettre-secondaire: 0.1em;
+$espacement-lettre-tertiaire: 0.15em;
+
+// Espacement des mots
+$espacement-mot-principale: 0.5em;
+$espacement-mot-secondaire: 1em;
+$espacement-mot-tertiaire: 1.5em;
+
+// Tailles d'icône & texte
+$taille-icone-principale: 24px;
+$taille-icone-secondaire: 16px;
+$taille-icone-tertiaire: 12px;
+$big-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$normal-font-size: .938rem;
+$smaller-font-size: .75rem;
+
+// Animation
+$duree-animation: 0.5s;
+$effet-animation: ease-in-out;
+$iteration-animation: infinite;
+
+// Variables dérivées
+$hauteur-ligne: $taille-police-principale * 1.5;
+$largeur-bouton: $largeur-colonne * 3;
+$taille-icone: $taille-icone-principale; // Par défaut, la taille d'icône principale est utilisée
+
+// Largeurs de bordure
+$largeur-bordure-principale: 2px;
+$largeur-bordure-secondaire: 1px;
+
+// Styles de bordure
+$style-bordure-principale: solid;
+$style-bordure-secondaire: dashed;
+
+// Couleurs de bordure
+$color-bordure-principale: #007bff;
+$color-bordure-secondaire: #6c757d;
+
+// Opacités de bordure
+$opacite-bordure-principale: 1;
+$opacite-bordure-secondaire: 0.5;
+
+// Positions de bordure
+$position-bordure-haut: top;
+$position-bordure-bas: bottom;
+$position-bordure-gauche: left;
+$position-bordure-droite: right;
+
+// Variables dérivées
+$largeur-bordure-total: $largeur-bordure-principale + $largeur-bordure-secondaire;
+
+// Box shadow
+$couleur-ombre: rgba(0,0,0,0.2);
+$decalage-horizontal-ombre: 0;
+$decalage-vertical-ombre: 4px;
+$etendue-ombre: 10px;
+$taille-etalement-ombre: 0;
+
+// Variables dérivées
+// $position-x-ombre: $decalage-horizontal-ombre - $etendue-ombre / 2;
+// $position-y-ombre: $decalage-vertical-ombre - $etendue-ombre / 2;
+
+// Flexbox
+$flex-direction-principale: row;
+$flex-direction-secondaire: column;
+$justify-content-principale: center;
+$justify-content-secondaire: space-between;
+$justify-content-03: space-around;
+$enroulement-flexbox-principale: nowrap;
+$align-items-principale: center;
+$align-items-secondaire: flex-start;
+$align-self-principale: auto;
+$align-self-secondaire: flex-end;
+$text-aline-principal: center; 
+$text-aline-second: justify;
+
+// Cursor
+$curseur-principale: pointer;
+$curseur-secondaire: default;
+
+
+// Display
+$display-principale: block;
+$display-secondaire: inline-block;
+$display-tertiaire: inline;
+$display-quaternaire: flex;
+$display-quintuplaire: none;
+
+// Alignement
+$alignement-vertical-principale: middle;
+$alignement-horizontal-principale: center;
+
+// Position
+$position-principale: absolute;
+$position-secondaire: relative;
+$position-tertiaire: fixed;
+$position-quaternaire: sticky;
+$alignement-position-principale: top;
+$positionnement-position-principale: 50%;
+
+// Overflow
+$overflow-principale: hidden;
+$overflow-secondaire: scroll;
+
+// Valeurs booléennes
+$valeur-booléenne-vrai: true;
+$valeur-booléenne-faux: false;
+// Listes de valeurs 
+$liste-valeurs: 1px 2px 3px;
+$liste-colors: #000 #fff #f00;
+
+// Variables dérivées
+$position-x-centree: calc(50% - $largeur-principale / 2);
+$position-y-centree: calc(50% - $hauteur-principale / 2);
+
+// Z-index
+$z-index-haut: 100;
+$z-index-moyen: 50;
+$z-index-bas: 10;
+
+// Opacité
+$opacite-principale: 1;
+$opacite-seconde: 0.75;
+$opacite-tertiaire: 0.5;
+
+
+
+// Dégradés
+$degrade-horizontal: to right;
+$degrade-vertical: to bottom;
+$degrade-diagonal-1: to bottom right;
+$degrade-diagonal-2: to bottom left;
+
+// Variables dérivées
+$color-principale-contrastee: #fff;
+$color-secondaire-contrastee: #fff;
+$color-tertiaire-contrastee: #fff;
+$color-quaternaire-contrastee: #fff;
+$color-quintuplaire-contrastee: #000;
+
+// Formes
+$rayon-bordure-principale: 4px;
+$rayon-bordure-secondaire: 2px;
+$rayon-bordure-tertiaire: 50%;
+
+// Ombres
+$ombre-principale: 0 0 5px rgba(0, 0, 0, 0.1);
+$ombre-secondaire: 0 0 10px rgba(0, 0, 0, 0.2);
+$ombre-tertiaire: 0 0 20px rgba(0, 0, 0, 0.3);
+
+// Grilles
+$nombre-colonnes-grille: 12;
+$gutter-grille: 20px;
+
+// // Variables dérivées
+// // $largeur-colonne-grille: (100% - ($gutter-grille * ($nombre-colonnes-grille - 1))) / $nombre-colonnes-grille;
+// $taille-police-principale: $taille-principale + 2px;
+// $taille-police-secondaire: $taille-secondaire + 2px;
+
+// Font-weight
+$font-weight-normal: normal;
+$font-weight-gras: bold;
+
+// Transition
+$duree-transition: 0.3s;
+$fonction-transition: ease-in-out;
+
+// Variables dérivées
+// $espace-total-principale: $espace-exterieur-principale + $espace-interieur-principale;
+$taille-minimum-principale: 320px;
+$taille-maximum-principale: 1440px;
+
+// Bordures
+$largeur-bordure-principale: 1px;
+$largeur-bordure-secondaire: 2px;
+$style-bordure-principale: solid;
+$style-bordure-secondaire: dashed;
+$couleur-bordure-principale: #000;
+$couleur-bordure-secondaire: #fff;
+
+// Animation
+$duree-animation: 1s;
+$fonction-animation: cubic-bezier(0.42, 0, 0.58, 1);
+
+// Variables dérivées
+$largeur-bordure-totale-principale: $largeur-bordure-principale * 2;
+$largeur-bordure-totale-secondaire: $largeur-bordure-secondaire * 2;
+$couleur-bordure-totale-principale: $couleur-bordure-principale;
+$couleur-bordure-totale-secondaire: $couleur-bordure-secondaire;
+$header-height: 3rem;
